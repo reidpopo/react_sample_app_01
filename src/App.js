@@ -1,12 +1,34 @@
 import React from 'react';
 
-function App() {
+// class App extends Component {
+//   render() {
+//     return null;
+//   }
+// }
+
+// function App() {
+//   return (
+//     <React.Fragment>
+//       <label htmlFor="bar">bar</label>
+//       <input type="text" onChange={() => {console.log("i am clicked.")}} />
+//     </React.Fragment>
+//   )
+// }
+
+const App = () => {
   return (
-    <React.Fragment>
-      <label htmlFor="bar">bar</label>
-      <input type="text" onChange={() => {console.log("i am clicked.")}} />
-    </React.Fragment>
+    <div>
+      <Cat />
+      <Cat />
+      <Cat />
+      <Cat />
+      <Cat />
+    </div>
   )
+}
+
+const Cat = () => {
+  return <div>Meow!</div>
 }
 
 export default App;
