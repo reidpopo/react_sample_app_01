@@ -15,7 +15,7 @@ class Counter extends Component {
 
   handleMinusbutton = () => {
     this.setState({ count: this.state.count - 1})
-    if (this.state.count > 3) {
+    if (this.state.count < 3) {
       console.log("uhohohoho")
     }
   }
